@@ -1,0 +1,193 @@
+
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Now - BookMySeat</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: white;
+      color: #333;
+    }
+
+    .location-select {
+      padding: 20px;
+      text-align: center;
+      background-color: #f8f8f8;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .location-select label {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    .location-select select {
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    .category-section {
+      padding: 30px 20px;
+    }
+
+    .category-title {
+      font-size: 24px;
+      color: crimson;
+      margin-bottom: 15px;
+      border-left: 5px solid crimson;
+      padding-left: 10px;
+    }
+
+     .movie-row {
+        display: flex;
+        justify-content: center;  /* ✅ Center-align items */
+        flex-wrap: nowrap;
+       overflow-x: auto;
+        gap: 20px;
+        padding-bottom: 10px;
+    }
+
+    .movie-card {
+      flex: 0 0 auto;
+      width: 150px;
+      background-color: #f2f2f2;
+      border-radius: 10px;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .movie-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .movie-title {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .movie-rating {
+      color: #777;
+      font-size: 14px;
+    }
+
+    /* Scrollbar styling (optional) */
+    .movie-row::-webkit-scrollbar {
+      height: 8px;
+    }
+
+    .movie-row::-webkit-scrollbar-thumb {
+      background: #ccc;
+      border-radius: 10px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Location Selector -->
+  <div class="location-select">
+    <label for="location">Select Your Location:</label>
+    <select id="location">
+      <option>Trichy</option>
+      <option>Chennai</option>
+      <option>Madurai</option>
+      <option>Coimbatore</option>
+    </select>
+  </div>
+
+  <!-- Now Showing -->
+  <div class="category-section">
+    <div class="category-title">Now Showing</div>
+    <div class="movie-row">
+      <div class="movie-card">
+        <img src="DD.jpeg" />
+        <div class="movie-title">DD Next Level</div>
+        <div class="movie-rating">❤️ 8.8</div>
+      </div>
+      <div class="movie-card">
+        <img src="MAAMAN.jpeg" />
+        <div class="movie-title">Maaman</div>
+        <div class="movie-rating">❤️ 8.5</div>
+      </div>
+      <div class="movie-card">
+        <img src="FD.jpeg" />
+        <div class="movie-title">Final Destination</div>
+        <div class="movie-rating">❤️ 8.6</div>
+      </div>
+      <div class="movie-card">
+        <img src="TR.jpeg" />
+        <div class="movie-title">Tourist Family</div>
+        <div class="movie-rating">❤️ 9.0</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Trending Now -->
+  <div class="category-section">
+    <div class="category-title">Trending Now</div>
+    <div class="movie-row">
+      <div class="movie-card">
+        <img src="RETRO.jpeg" />
+        <div class="movie-title">Retro</div>
+        <div class="movie-rating">❤️ 8.2</div>
+      </div>
+      <div class="movie-card">
+        <img src="ELEVEN.jpeg" />
+        <div class="movie-title">Eleven</div>
+        <div class="movie-rating">❤️ 7.5</div>
+      </div>
+      <div class="movie-card">
+        <img src="THUDARUM.jpeg" />
+        <div class="movie-title">Thudarum</div>
+        <div class="movie-rating">❤️ 7.3</div>
+      </div>
+      <div class="movie-card">
+        <img src="GBU.jpeg" />
+        <div class="movie-title">Good Bad Ugly</div>
+        <div class="movie-rating">❤️ 8.0</div>
+      </div>
+    </div>
+  </div>
+
+ 
+
+  <!-- Coming Soon -->
+  <div class="category-section">
+    <div class="category-title">Coming Soon</div>
+    <div class="movie-row">
+      <div class="movie-card">
+        <img src="THUG.jpeg" />
+        <div class="movie-title">Thug Life</div>
+        <div class="movie-rating">👍 51.8K</div>
+      </div>
+      <div class="movie-card">
+        <img src="COOLIE.jpeg" />
+        <div class="movie-title">Coolie</div>
+        <div class="movie-rating">👍 100K</div>
+      </div>
+      <div class="movie-card">
+        <img src="WAR.jpeg" />
+        <div class="movie-title">War 2</div>
+        <div class="movie-rating">👍 45K</div>
+      </div>
+      <div class="movie-card">
+        <img src="KUBERA.jpeg" />
+        <div class="movie-title">Kubera</div>
+        <div class="movie-rating">👍 33.2K</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
